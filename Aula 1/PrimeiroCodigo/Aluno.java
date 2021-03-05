@@ -5,12 +5,15 @@ public class Aluno //Aluno se torna um tipo de dado
    String nome;
    double nota;
    
+   public Aluno(String pNome, double pNota){
+       nome = pNome;
+       nota = pNota;
+   }
+   
    //Metodos
    public boolean estaAprovado(){
-        if(nota >=7){
-            return true;
-        }else{
-            return false;
-        }
-    }
+       
+       return nota >= 6;
+       //retorna um true ou false
+   }
 }
