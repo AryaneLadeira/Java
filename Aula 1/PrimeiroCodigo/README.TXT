@@ -14,3 +14,5 @@ o aluno com a maior nota.
     Aluno maior nota (Indicativo de uma nova classe: Professor)
     
 4) Construtor (Toda classe tem um construtor, então é obrigatório)
+
+5) Métodos de Acesso (get e set)
