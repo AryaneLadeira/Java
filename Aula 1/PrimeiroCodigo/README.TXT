@@ -16,3 +16,5 @@ o aluno com a maior nota.
 4) Construtor (Toda classe tem um construtor, então é obrigatório)
 
 5) Métodos de Acesso (get e set)
+
+6) Criar o método Main (Deve ter apenas escrita e leitura!!!!!!)

@@ -31,7 +31,7 @@ public class Aluno //Aluno se torna um tipo de dado
    }
    
    
-   //Metodos
+   //Métodos
    public boolean estaAprovado(){
        
        return nota >= 6;
