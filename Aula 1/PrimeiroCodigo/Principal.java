@@ -9,17 +9,17 @@ public class Principal
        a1 = new Aluno("Zezin", 9);
        
        if(a1.estaAprovado()){
-            System.out.println("O aluno Zezin está aprovado!");
+            System.out.println("O aluno "+a1.getNome()+" está aprovado!");
        }else{
-            System.out.println("O aluno Zezin está reprovado!");
+            System.out.println("O aluno "+a1.getNome()+" está reprovado!");
        }
        
        a2 = new Aluno("Pedrin", 4);
        
        if(a2.estaAprovado()){
-            System.out.println("O aluno Pedrin está aprovado!");
+            System.out.println("O aluno "+a2.getNome()+" está aprovado!");
        }else{
-            System.out.println("O aluno Pedrin está reprovado!");
+            System.out.println("O aluno "+a2.getNome()+" está reprovado!");
        }
    }
 }
