@@ -11,6 +11,11 @@ public class Aluno //Aluno se torna um tipo de dado
        nota = pNota;
    }
    
+   public Aluno(){
+       nome = "";
+       nota = 0;
+   }
+   
    //Métodos de Acesso
    public void setNota(double novaNota){
        if (novaNota >= 0 && novaNota <= 10){
