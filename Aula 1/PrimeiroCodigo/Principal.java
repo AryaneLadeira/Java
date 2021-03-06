@@ -35,5 +35,14 @@ public class Principal
        }else{
             System.out.println("O aluno "+a2.getNome()+" está reprovado com nota "+a2.getNota()+"!");
        }
+       
+       //Não deve estar aqui!
+       //Calculo do aluno com maior nota
+       if(a1.getNota() > a2.getNota()){
+           System.out.println("Aluno "+a1.getNome()+" tem maior nota.");
+       }else{
+           System.out.println("Aluno "+a2.getNome()+" tem maior nota.");
+        
+       }
    }
 }
