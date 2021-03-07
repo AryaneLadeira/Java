@@ -3,7 +3,7 @@ public class Funcionario
 {
     private String nome;
     private boolean temValeTransporte, trabalhaNoite, trabalhaVendas;
-    private double totalVendas, salarioBruto, salarioLiquido;
+    private double totalVendas, salarioBruto;
     private int qtdeFilhos;
     
     public Funcionario(){
@@ -27,15 +27,10 @@ public class Funcionario
     }
     
     public double calcularSalarioLiquido(){
+        double salarioLiquido;
         salarioLiquido = salarioBruto - (salarioBruto * 0.13);
         
-        if(qtdeFilhos > 0){
-            if(qtdeFilhos <= 3){
-                salarioLiquido += 50 * qtdeFilhos;
-            }else{
-                salarioLiquido += 150;
-            }
-        }
+        salarioLiquido += (qtdeFilhos <= 3)? qtdeFilhos * 50 : 150;
         
         if(temValeTransporte){
             salarioLiquido -= salarioLiquido * 0.03;
