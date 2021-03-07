@@ -2,9 +2,9 @@
 public class Funcionario
 {
     String nome;
-    boolean temValeTransporte, trabalhaNoite, trabalhaVendas;
-    double totalVendas, salarioBruto, salarioLiquido;
-    int qtdeFilhos;
+    private boolean temValeTransporte, trabalhaNoite, trabalhaVendas;
+    private double totalVendas, salarioBruto, salarioLiquido;
+    private int qtdeFilhos;
     
     public Funcionario(){
         nome = "";

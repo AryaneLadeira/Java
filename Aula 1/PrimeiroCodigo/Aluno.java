@@ -2,8 +2,8 @@
 public class Aluno //Aluno se torna um tipo de dado
 {
     //Atributos
-   String nome;
-   double nota;
+   private String nome;
+   private double nota;
    
    //Método Construtor
    public Aluno(String pNome, double pNota){
