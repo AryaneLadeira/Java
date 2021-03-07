@@ -25,4 +25,52 @@ public class Funcionario
         salarioBruto = pSalarioBruto;
         qtdeFilhos = pQtdeFilhos;
     }
+    
+    public void setNome(String novoNome){
+        nome = novoNome;
+    }
+    
+    public String getNome(){
+        return nome;
+    }
+    
+    public void setTemValeTransporte(boolean novoTemVale){
+        temValeTransporte = novoTemVale;
+    }
+    
+    public boolean getTemValeTransporte(){
+        return temValeTransporte;
+    }
+    
+    public void setTrabalhaNoite(boolean novoTrabalhaNoite){
+        trabalhaNoite = novoTrabalhaNoite;
+    }
+    
+    public boolean getTrabalhaNoite(){
+        return trabalhaNoite;
+    }
+    
+    public void setTotalVendas(double novoTotalVendas){
+        totalVendas = novoTotalVendas;
+    }
+    
+    public double getTotalVendas(){
+        return totalVendas;
+    }
+    
+    public void setSalarioBruto(double novoSalarioBruto){
+        salarioBruto = novoSalarioBruto;
+    }
+    
+    public double getSalarioBruto(){
+        return salarioBruto;
+    }
+    
+    public void setQtdeFilhos(int novaQtdeFilhos){
+        qtdeFilhos = novaQtdeFilhos;
+    }
+    
+    public int setQtdeFilhos(){
+        return qtdeFilhos;
+    }
 }
