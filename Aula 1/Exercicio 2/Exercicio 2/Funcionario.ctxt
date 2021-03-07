@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Funcionario
+comment1.params=
+comment1.target=Funcionario()
+comment2.params=pNome\ pTemVale\ pTrabalhaNoite\ pTrabalhaVendas\ pVendas\ pSalarioBruto\ pQtdeFilhos
+comment2.target=Funcionario(java.lang.String,\ boolean,\ boolean,\ boolean,\ double,\ double,\ int)
+numComments=3
