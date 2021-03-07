@@ -26,29 +26,34 @@ public class Funcionario
         qtdeFilhos = pQtdeFilhos;
     }
     
+    //Métodos
     public double calcularSalarioLiquido(){
-        double salarioLiquido;
-        salarioLiquido = salarioBruto - (salarioBruto * 0.13);
-        
-        salarioLiquido += (qtdeFilhos <= 3)? qtdeFilhos * 50 : 150;
-        
-        if(temValeTransporte){
-            salarioLiquido -= salarioLiquido * 0.03;
-        }
-        
-        if(trabalhaNoite){
-            salarioLiquido += salarioLiquido * 0.05;
-        }
-        
-        if(trabalhaVendas){
-            salarioLiquido += totalVendas * 0.02;
-        }
-        
-        return salarioLiquido;
+        return salarioBruto - descontoINSS() - descontoValeTransporte()
+        + bonusPorFilho() + bonusTrabalhaNoite() + bonusVendedor();
+    }
+    
+    private double descontoINSS(){
+        return salarioBruto - (salarioBruto * 0.13);
+    }
+    
+    private double bonusPorFilho(){
+        return (qtdeFilhos <= 3)? qtdeFilhos * 50 : 150;
+    }
+    
+    private double descontoValeTransporte(){
+        return (temValeTransporte)? salarioBruto * 0.03 : 0;
+    }
+    
+    private double bonusTrabalhaNoite(){
+        return (trabalhaNoite)? salarioBruto * 0.05 : 0;
+    }
+    
+    private double bonusVendedor(){
+        return (trabalhaVendas)? totalVendas * 0.02 : 0;
     }
     
     
-    
+    // Get e Set
     public void setNome(String novoNome){
         nome = novoNome;
     }
@@ -90,10 +95,12 @@ public class Funcionario
     }
     
     public void setQtdeFilhos(int novaQtdeFilhos){
-        qtdeFilhos = novaQtdeFilhos;
+        if(novaQtdeFilhos >= 0){
+            qtdeFilhos = novaQtdeFilhos;
+        }
     }
     
-    public int setQtdeFilhos(){
+    public int getQtdeFilhos(){
         return qtdeFilhos;
     }
 }
