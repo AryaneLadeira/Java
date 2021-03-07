@@ -1,7 +1,7 @@
 
 public class Funcionario
 {
-    String nome;
+    private String nome;
     private boolean temValeTransporte, trabalhaNoite, trabalhaVendas;
     private double totalVendas, salarioBruto, salarioLiquido;
     private int qtdeFilhos;
