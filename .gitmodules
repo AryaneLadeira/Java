@@ -1,6 +1,0 @@
-[submodule "Java"]
-	path = Java
-	url = https://github.com/AryaneLadeira/Java.git
-[submodule "lista-de-exercicios-basica-i"]
-	path = lista-de-exercicios-basica-i
-	url = https://gitlab.com/vianna-2021-1/fpoo/aryane.ladeira/lista-de-exercicios-basica-i.git
