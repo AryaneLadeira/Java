@@ -1,0 +1,3 @@
+[submodule "exercicio-funcionario"]
+	path = exercicio-funcionario
+	url = https://gitlab.com/vianna-2021-1/fpoo/aryane.ladeira/exercicio-funcionario.git
